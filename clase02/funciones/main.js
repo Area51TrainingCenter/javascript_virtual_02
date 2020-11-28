@@ -1,0 +1,1 @@
+let varibale_global="Dato Global"
