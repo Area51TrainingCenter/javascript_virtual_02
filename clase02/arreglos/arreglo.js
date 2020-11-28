@@ -47,3 +47,50 @@ gustos.shift();
 console.log(gustos);
 
 
+
+function fecha_formato(){
+    //  Sábado 28 de Noviembre del 2020
+    let fecha=new Date();
+    console.log(fecha);
+    let dia_semana=fecha.getDay();
+    let dia_mes=fecha.getDate();
+    let mes=fecha.getMonth();
+    let anio=fecha.getFullYear();
+   
+    // mes // 10
+     let meses=[
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+    ]
+
+    let nombre_mes=meses[mes]
+    
+    // Dicimebre
+
+    let dias=[
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sábado",]
+    let nombre_dia=dias[dia_semana];
+
+
+
+    let formato=nombre_dia+" "+dia_mes+" de "+ nombre_mes+" del "+anio; 
+    return formato;
+}
+
+console.log(fecha_formato());
