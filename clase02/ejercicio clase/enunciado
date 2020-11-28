@@ -1,0 +1,4 @@
+*crear un componente web que permita determinar el cambio de dolares a soles y de soles a dolares , considerar el tipo de cambio a para la primera operacion de 3.4 y para la segunda 3.7
+considerar los siguientes aspectos:
+el usuario debe poder ingresar el monto a cambiar y el resultado será mostrado luego que el usuario ejectue la acción mediane el boton correspondiente
+se debe contar con un boton que indique que se desa realizar otra operación por lo que todos los campos deben quedar disponbiles nuevmente
