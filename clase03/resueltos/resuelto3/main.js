@@ -24,5 +24,33 @@ console.log("hizo click en eliminar")
 agregar.addEventListener("click",()=>{
     let tarea_ingresa=tarea.value;
     tareas.push(tarea_ingresa);
-    console.log(tareas)
+    //console.log(tareas);
+    leerArreglo();
 })
+
+
+
+function leerArreglo(){
+    //
+
+    let contenido="";
+
+    for(let i=0;i<tareas.length;i++){
+        console.log(tareas[i]);
+       // listado_tareas.innerHTML="<li>"+tareas[i]+"</li>"
+        contenido=contenido+"<li id='ele-"+i+"'>"+tareas[i]+"<span onclick='eliminar("+i+")'>Eliminar</span></li>";
+    }
+
+    listado_tareas.innerHTML=contenido;
+
+    
+}
+
+function eliminar(parametro){
+    console.log(parametro)
+    console.log("hizo click en eliminar");
+    let elemento_elminiar="ele-"+parametro;
+    console.log(elemento_elminiar);
+    document.getElementById(elemento_elminiar).remove();
+
+}
