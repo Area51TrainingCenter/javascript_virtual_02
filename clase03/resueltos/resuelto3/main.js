@@ -54,3 +54,17 @@ function eliminar(parametro){
     document.getElementById(elemento_elminiar).remove();
 
 }
+
+$("#modal").removeClass("activado")
+$("#modal").addClass("activado")
+$("modal").hide();
+$("modal").show();
+
+function removeClass(){
+    document.getElementById("modal").classList.remove("activado");
+
+}
+function addClass(){
+    document.getElementById("modal").classList.add("activado");
+
+}
