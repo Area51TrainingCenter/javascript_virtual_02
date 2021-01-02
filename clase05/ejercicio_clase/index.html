@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        .contenedor{
+            max-width: 600px;
+            margin:0 auto;
+            width: 100%;;
+        }
+        .img-principal{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 10px;;
+        
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+        .item-sitio{
+            box-shadow: 1px 1px 5px  gray;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px
+        }
+        .info-sitio{
+            display: flex;
+            align-items: center;;
+        }
+        .detalle-sitio h2{
+            font-size: 18px;;
+        }
+        .detalle-sitio p{
+            font-size: 13px;;
+        }
+        .filtros{
+            display: flex;
+
+        }
+        .filtros div{
+            padding-top:10px;
+            padding-bottom: 10px;
+            flex-grow: 1;
+            text-align: center;
+            border-right: 1px solid gray;
+        }
+        .filtros div:last-child{
+            border-right: 0px;
+        }
+        .ocultar{
+            display: none;
+        }
+        .detalle-foto-principal{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div id="contenido-inicial">
+            <div class="filtros">
+                <div onclick="sitios_por_categoria(1)">1</div>
+                <div onclick="sitios_por_categoria(2)">2</div>
+                <div onclick="sitios_por_categoria(3)">3</div>
+                <div onclick="sitios_por_categoria(4)">4</div>
+                <div onclick="sitios_por_categoria(5)">5</div>
+                <div onclick="sitios_por_categoria(6)">6</div>
+                <div onclick="sitios_por_categoria(7)">7</div>
+            </div>
+            <div id="listado-sitios" class="listado-sitios">
+            
+
+            </div>
+        </div>
+        <div id="contenido-detalle" class="ocultar">
+            <div><span id="regresar">Regresar</span></div>
+            <img id="detalle-foto-principal" src="" alt="">
+            <h1 id="detalle-titulo"></h1>
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
