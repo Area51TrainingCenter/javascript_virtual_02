@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            max-width: 1024px;
+            margin:0 auto
+        }
+        #productos{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .producto{
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .producto img{
+            width: 100%;
+        }
+        .header-site{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .opcion-carrito{
+            position: relative;
+        }
+        .detalle-carrito{
+            width: 300px;
+            background-color: red;
+            height: 400px;
+            position: absolute;
+            right: 0px;
+            overflow: scroll;
+            top: 30px;
+           
+           
+        }
+        .forma{
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .producto-carrito{
+            width: 100%;
+            background-color: gray;
+            margin-bottom: 15px;
+        }
+        .producto-carrito img{
+            width: 100px;
+        } 
+        .hide{
+            display: none
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header-site">
+            <h1>Tienda</h1>
+            <span onclick="cerrar_carrito()">Cerrar Carrito</span>
+            <div class="opcion-carrito" id="ver-carrito">
+                <div><span>Carrito: <span id="cantidad_carrito">0</span> items</span></div>
+                <div class="detalle-carrito hide" id="productos_carrito">
+                 
+                </div>
+            </div>
+        </header>
+        <div>
+            <section id="productos">
+                
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
