@@ -1,0 +1,36 @@
+[{
+   "nombre":"Producto1",
+   "foto":"https://www.zotal.com/wp-content/uploads/2015/09/SANITAS___Neozit_5369df1bce40c-400x400.jpg",
+   "precio":"100.00"
+
+},
+{
+   "nombre":"Producto2",
+   "foto":"https://www.estudientes.com/1649-large_default/desinfectante-micro-10-excel-unident.jpg",
+   "precio":"200.00"
+
+},
+{
+   "nombre":"Producto3",
+   "foto":"https://fundoverde.com/wp-content/uploads/2015/12/Aceite-Virgen-Extra-400x400.png",
+   "precio":"300.00"
+
+},
+{
+   "nombre":"Producto4",
+   "foto":"https://fundoverde.com/wp-content/uploads/2020/11/Miel-de-abeja-1kg-400x400.jpg",
+   "precio":"400.00"
+
+},
+{
+   "nombre":"Producto5",
+   "foto":"https://www.misharastrera.com/wp-content/uploads/2020/05/Aceite-esencial-de-Eucalipto-400x400.jpg",
+   "precio":"500.00"
+
+},
+{
+   "nombre":"Producto6",
+   "foto":"https://www.maped-creativ.com/wp-content/uploads/2018/07/907015_R01_AMB1_lr-400x400.jpg",
+   "precio":"600.00"
+
+}]

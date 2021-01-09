@@ -40,8 +40,6 @@ let configProxie={
             objeto[propiedad]=valor;
        }
     }
-
-
 }
 
 
