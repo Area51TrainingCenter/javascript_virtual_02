@@ -8,8 +8,9 @@ class Producto{
         return this.stock;
     }
     actualizarStock(valor){
-        if(typeof valor!="number"){
-            // no es un valor numerico
+
+        if(isNaN(valor) || typeof valor!="number"){
+           // no es un valor numerico
             throw "El valor debe ser un numero , revisa tus datos"
         }
         else{

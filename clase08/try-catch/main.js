@@ -13,9 +13,9 @@ if(typeof numero!="number"){
 }*/
 
 let prod=new Producto(1,10,50.0);
-let stock_nuevo=prompt("actualizar Stock")
+let stock_nuevo=parseInt(prompt("actualizar Stock"));
+console.log(stock_nuevo);
 
-let igv=prod.precio*0.18
 try{
     prod.actualizarStock(stock_nuevo);
 }
