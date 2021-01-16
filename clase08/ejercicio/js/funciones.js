@@ -7,16 +7,29 @@ function obtenerSitios(){
         console.log(data);
         for(let item of data){
             let sitio=new SitioTuristico(item);
-          //  console.log(sitio);
             listadoSitiosTuristicos.push(sitio)
-            
         }
-
-        console.log(listadoSitiosTuristicos);
-      
-        
-    
+        mostarListaSitios(listadoSitiosTuristicos)
     })
+}
+
+
+
+function mostarListaSitios(lista){
+    let temp="";
+    for(let [index,item] of lista.entries()){
+        temp=temp+`<li class="list-group-item" onclick="ver_detalle_sitio(${index})">${item.nombre}</li>`;
+    }
+    document.getElementById("listado-sitios").innerHTML=temp;
+}
+
+
+function ver_detalle_sitio(indice){
+    
+    console.log(listadoSitiosTuristicos[indice]);
+
+    console.log(listadoSitiosTuristicos[indice].obtenerUbicacion());
+
 }
 /*
 
