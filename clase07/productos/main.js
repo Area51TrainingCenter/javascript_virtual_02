@@ -27,6 +27,7 @@ obtenerProductos()
 
 function obtenerProductos(){
 
+
     fetch(url)
     .then((data)=>{return data.json()})
     .then((data)=>{
